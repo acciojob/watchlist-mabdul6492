@@ -43,8 +43,8 @@ public class MovieRepository {
         return directorMovies.get(directorName);
     }
 
-    public Set<String> getAllMovies() {
-        return movies.keySet();
+    public List<String> getAllMovies() {
+        return new ArrayList<>(movies.keySet());
     }
 
     public void deleteDirectorByName(String directorName) {
